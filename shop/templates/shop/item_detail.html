@@ -1,0 +1,4 @@
+{{ object.name }}
+{{ object.price }}
+<a type="button" class="btn btn-sm btn-outline-secondary"
+   href="{% url 'shop:buy_item' object.pk %}">buy</a>

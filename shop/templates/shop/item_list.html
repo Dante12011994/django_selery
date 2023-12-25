@@ -1,0 +1,6 @@
+{% for object in object_list %}
+{{ object.name }}
+{{ object.price }}
+<a type="button" class="btn btn-sm btn-outline-secondary"
+   href="{% url 'shop:item_view' object.pk %}">Подробнее</a>
+{% endfor %}
